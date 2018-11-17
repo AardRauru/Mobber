@@ -1,0 +1,71 @@
+Version 2.4.5:
+--------------
+*Miniwindow buttons will now default to on
+*Autokill can now have stacked commands delimited by a double semicolon ;;
+
+Version 2.4.4:
+--------------
+*Fixed a bug where mw was defaulting to collapsed (Castiel)
+
+Version 2.4.3:
+--------------
+*Added 'mobber quest' command to the help file
+*Added 'mobber noexp <expthreshold>' command to auto-handle noexp on campaigns
+
+Version 2.4.2:
+--------------
+*Toggle ak state will now save. (Crowley/Zexe)
+*Added newline to end of scan highlighting
+*Merged addmob redundant functions
+*Added 'mobber quest' command to show quest target/rooms (Crowley)
+
+Version 2.4.1:
+--------------
+*Miniwindow fixed resize issue when autoresize was enabled and the height of window increased
+*Miniwindow fixed save state of buttons enabled/disabled
+
+Version 2.4:
+--------------
+*Plugin ids were changed to wipe state files for compatibility
+*Mobber find commands (mf, mf <mob>, mfa <mob>) now have condensed outputs
+*Added lookups for out-of-level-range campaigns
+**If a mob or room match is found out-of-level-range the mob will be darkgray
+**Changed lookup order for matching mobs, should be slightly more accurate
+*Re-wrote miniwindow plugin for better control
+**Miniwindow now has more descriptive messages for campaigns and global quest status
+**Miniwindow now has a countdown timer for next campaign available
+**Miniwindow now has buttons for sending cp/gq commands
+**Miniwindow button colors can be changed with 'mobber btn <color> mw' command
+**Miniwindow right-click options now include: collapse/expand, autoresize, hide/show btns
+
+Version 2.3.3:
+--------------
+*Global quest alert sound will only play if 'mobber mute quest' is set to off. (Castiel)
+
+Version 2.3.2:
+--------------
+*Fixed global quest complete triggers (Gizmmo)
+*Added immhomes to default zone list and changed duplicate roomid of uplanes/lplanes
+
+Version 2.3.1:
+--------------
+*Fixed quest fail message (Castiel)
+
+Version 2.3:
+------------
+*Fixed an nil error in miniwin uncaught due to state files
+*Changed miniwin bg
+*Changed a column in area table to unique, should have no affect on existing db's
+
+Version 2.2:
+------------
+*Added default target to quick-where
+*Right-click popup on miniwindow targets
+*Fixed miniwindow reset/hotspot deletion
+
+Version 2.1:
+------------
+*Added hyperlinks to most outputs
+*Added "s&d" alias names
+*Added a miniwindow plugin
+*Fixed level range searches
